@@ -8,7 +8,7 @@ setup(
   author = 'Abishek Kamalanathan',                   # Type in your name
   author_email = 'neyveliabi@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/abishek21',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/abishek21/eda4nlp/archive/0.1.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/abishek21/eda4nlp/archive/v_01.tar.gz',    # I explain this later on
   keywords = ['nlp', 'ngrams', 'eda'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pandas',
