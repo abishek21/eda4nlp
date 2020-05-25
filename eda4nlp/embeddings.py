@@ -1,9 +1,9 @@
 import numpy as np
 import os
 
-def get_embeddings(word_index,max_words,glove_dir,glove_path,embedding_dim):
+def get_embeddings(word_index,max_words,glove_path,embedding_dim):
     embeddings_index = {}
-    f = open(os.path.join(glove_dir,glove_path),encoding="utf8")
+    f = open(glove_path,encoding="utf8")
     for line in f:
         values = line.split()
         word = values[0]
@@ -18,4 +18,4 @@ def get_embeddings(word_index,max_words,glove_dir,glove_path,embedding_dim):
             embedding_vector = embeddings_index.get(word)
             if embedding_vector is not None:
                 embedding_matrix[i] = embedding_vector
-    return embedding_matrix
+    return embedding_matrix,embeddings_index
